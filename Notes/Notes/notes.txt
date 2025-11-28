@@ -1,1 +1,59 @@
 My Nmap study notes
+## What is Nmap?
+Nmap (Network Mapper) is a free and open-source tool used for:
+- Host discovery
+- Port scanning
+- Service and version detection
+- OS fingerprinting
+- Vulnerability detection (using NSE scripts)
+
+## Basic Scan Types
+
+### 1. Ping Scan
+Command:
+    nmap -sn <target-ip>
+Purpose:
+    Check if a host is online.
+
+### 2. Basic Port Scan
+Command:
+    nmap <target-ip>
+Purpose:
+    Scans the 1000 most common ports.
+
+### 3. Service/Version Detection
+Command:
+    nmap -sV <target-ip>
+Purpose:
+    Shows which services are running and their versions.
+
+### 4. OS Detection
+Command:
+    nmap -O <target-ip>
+Purpose:
+    Attempts to identify the operating system.
+
+### 5. Aggressive Scan
+Command:
+    nmap -A <target-ip>
+Purpose:
+    Combines OS detection, version detection, script scanning.
+
+## Useful Flags
+- `-p` → specify port(s)
+- `-Pn` → skip host discovery
+- `-sS` → stealth SYN scan
+- `-sU` → UDP scan
+- `-T4` → faster scan timing
+
+## My Lab Setup
+- Host Machine: Windows
+- Attacker Machine: Kali Linux
+- Target Machine: Ubuntu
+- Network: NAT + Host-Only Adapter
+
+## Key Learnings
+- How to identify live hosts
+- How to analyze open/closed ports
+- How network adapters impact connectivity
+- How to prepare scan reports for GitHub
