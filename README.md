@@ -25,5 +25,22 @@ It covers basic and detailed Nmap scans, results, screenshots, and notes.
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
+```plaintext
+Nmap-Scanning-Lab/
+│
+├── README.md                # Main documentation of the project
+│
+├── Commands-Used/           # All Nmap commands used during the scans
+│   └── basic-scans.txt
+│
+├── Scan-Results/            # Raw scan outputs
+│   └── ubuntu-basic-scan.txt
+    └──   ubuntu-aggressive-scan.txt 
+│
+├── Screenshots/             # Screenshots of terminal outputs
+│   └── <images go here>
+│
+└── Notes/                   # Personal notes, observations, learnings
+    └── nmap-notes.md
 
